@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqui guarda tus secretos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      <h1 class="titulo">Encripta tus secretos</h1>
+  
+      <main class="main">
+        <div class="left-text">
+          <form action="">
+            <textarea autocapitalize="none" autofocus class="text-input" rows="10" cols="12" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+            <label for="input-texto">Solo letras minúsculas, sin acento</label>
+            <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+            <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
+          </form>
+        </div>
+    
+        <div class="right-text">
+          <!-- <input class="text-input-salida" type="text" id="texto-a-copiar" placeholder="secretos encriptados" readonly> -->
+        <textarea autocapitalize="none" class="text-input-salida" rows="10" cols="12" type="text" id="texto-a-copiar" placeholder="secretos encriptados" readonly></textarea>  
+          <input type="button" class="btn" value="Copiar" onclick="copiarTexto()">
+        </div>
+        
+      </main>
+        <footer>
+          <img class="logo" src="imagenes/logofab.png" alt="logo-fab">   
+          <p class="copyright">&copy Copyright Fabrizio Bautista - 2023 </p>
+        </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
